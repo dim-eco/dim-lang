@@ -1,0 +1,16 @@
+# Rust
+target/
+**/*.rs.bk
+
+# Node
+node_modules/
+packages/embed/*.node
+packages/embed/index.js
+packages/embed/index.d.ts
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo

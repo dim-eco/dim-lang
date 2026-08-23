@@ -1,0 +1,21 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/lexer",
+    "crates/parser",
+    "crates/runtime",
+    "crates/embed",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "AGPL-3.0-or-later"
+
+[workspace.dependencies]
+dim-lang-lexer = { path = "crates/lexer" }
+dim-lang-parser = { path = "crates/parser" }
+dim-lang-runtime = { path = "crates/runtime" }
+napi = { version = "3", default-features = false, features = ["napi4"] }
+napi-derive = "3"
+napi-build = "2"

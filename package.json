@@ -1,0 +1,11 @@
+{
+  "name": "dim-lang",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build:embed": "npm run build -w @dim-lang/embed",
+    "build": "npm run build:embed"
+  }
+}

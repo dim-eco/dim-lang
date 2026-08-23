@@ -1,0 +1,10 @@
+[package]
+name = "dim-lang-parser"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[lib]
+
+[dependencies]
+dim-lang-lexer = { workspace = true }

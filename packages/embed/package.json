@@ -1,0 +1,17 @@
+{
+  "name": "@dim-lang/embed",
+  "version": "0.1.0",
+  "license": "AGPL-3.0-or-later",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "napi": {
+    "binaryName": "dim-lang-embed"
+  },
+  "scripts": {
+    "build": "napi build --cwd . --manifest-path ../../Cargo.toml --package dim-lang-embed --package-json-path package.json --output-dir . --platform --release",
+    "build:debug": "napi build --cwd . --manifest-path ../../Cargo.toml --package dim-lang-embed --package-json-path package.json --output-dir . --platform"
+  },
+  "devDependencies": {
+    "@napi-rs/cli": "^3"
+  }
+}
